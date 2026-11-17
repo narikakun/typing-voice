@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <title>Typing Voice</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <label class="visually-hidden" for="message">読み上げる文章</label>
+      <textarea
+        id="message"
+        autofocus
+        autocomplete="off"
+        enterkeyhint="send"
+        placeholder="ここに入力すると読み上げます"
+        spellcheck="false"
+      ></textarea>
+      <p id="status" class="visually-hidden" aria-live="polite"></p>
+    </main>
+  </body>
+</html>

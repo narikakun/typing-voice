@@ -1,0 +1,75 @@
+:root {
+  color-scheme: light;
+  font-family:
+    "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+  background: #f7f5ef;
+  color: #171714;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  padding: clamp(24px, 6vw, 88px);
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  resize: none;
+  overflow-y: auto;
+  background: transparent;
+  color: inherit;
+  caret-color: #e4512e;
+  font: inherit;
+  font-size: clamp(28px, 5.5vw, 72px);
+  font-weight: 650;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+}
+
+textarea::placeholder {
+  color: #aaa79f;
+  opacity: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    background: #181816;
+    color: #f2f0e9;
+  }
+
+  textarea::placeholder {
+    color: #77746d;
+  }
+}
